@@ -97,8 +97,8 @@ const db = [
     type: "Static Website",
     description:
       "Tasty Roads is a website creation based off the local business 'tasty roads'. This is a mock-up site and not a production site used by the resturant. Hosted on Netlify.",
-    link_live: "https://tastyroads.patadamrich.com",
-    link_source: "https://github.com",
+    link_live: "https://tastyroad.patadamrich.com",
+    link_source: "https://github.com/Patadam/tastyroads",
     img: "/static/images/restaurant.webp",
   },
   {
