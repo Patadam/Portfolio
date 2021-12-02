@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!------ SEO  ----------------------------------->
+    <meta name="description" content="Patrick's Portfolio website, skills and showcase." />
+    <!------ Favicon  ----------------------------------->
+    <link rel="shortcut icon" href="/static/images/favicon.webp" type="image/x-icon" />
+    <!--- GSAP animation framework -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!------ Stylesheet  ----------------------------------->
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <!------ Title  ----------------------------------->
+    <title>Patrick's Web Portfolio</title>
+  </head>
+  <body id="home">
+    <i class="material-icons" id="mobile-nav-control">menu</i>
+    <div class="mobile-nav-wrapper hidden">
+      <ul class="mobile-nav-container">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <!------ Start Body Content  ----------------------------------->
+    <header>
+      <!------ Start Header Content  ----------------------------------->
+      <section class="container hero">
+        <!--
+          <div class="theme-toggle">
+          <i id="theme-toggle" class="material-icons">light_mode</i>
+        </div>
+        -->
+        <div class="hero-title-wrapper">
+          <h1 class="hero-title-h1">Create Beautiful Websites.</h1>
+          <h2 class="hero-title-h2">
+            Hey, I'm <strong>Patrick</strong> and I love building amazing websites that achieve your goals. I love working with all technologies web.
+          </h2>
+        </div>
+        <nav class="hero-nav-wrapper">
+          <ul class="hero-nav-list">
+            <li class="hero-nav-li"><a href="#home">Home</a></li>
+            <li class="hero-nav-li"><a href="#projects">Projects</a></li>
+            <li class="hero-nav-li"><a href="#about">About</a></li>
+            <li class="hero-nav-li"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hero-cta-wrapper">
+          <a id="hero-cta"><strong>Scroll To My Projects</strong> <span id="arrow" class="material-icons">keyboard_arrow_down</span></a>
+        </div>
+      </section>
+      <!------ End Header Content  ----------------------------------->
+    </header>
+    <main>
+      <!------ Start Main Content  ----------------------------------->
+      <section class="container projects" id="projects">
+        <h1>
+          Projects
+          <label class="switch right">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider">
+              <span class="icon"> <i id="toggle-icon" class="material-icons">light_mode</i> </span>
+            </span>
+          </label>
+        </h1>
+        <!------ Start Projects List  ----------------------------------->
+        <ul class="projects-list">
+          <!------ Project [#1] ----------------------------------->
+          <li class="project-li">
+            <div class="project-li-content-wrapper">
+              <div class="project-li-title">
+                <h2>Realone</h2>
+                <h3>Website Redesign</h3>
+              </div>
+              <p>
+                The <a href="https://realone.patadamrich.com">Realone</a> project was completed as part of my Certificate III in Information
+                Technology. The project was to redesign the website to improve a number of given issues based on the original site.
+              </p>
+              <div class="project-li-links">
+                <a href="https://realone.patadamrich.com">View Live <span class="material-icons">open_in_new</span></a>
+                <a href="https://github.com/Patadam">View Source <span class="material-icons">source</span></a>
+              </div>
+              <h4>Early 2021</h4>
+            </div>
+            <img loading="lazy" src="/static/images/realone.webp" alt="" class="project-li-img" />
+          </li>
+          <!------ Project [#2] ----------------------------------->
+          <li class="project-li">
+            <div class="project-li-content-wrapper">
+              <div class="project-li-title">
+                <h2>Summit Adventures</h2>
+                <h3>Website Creation</h3>
+              </div>
+              <p>
+                <a href="https://summitadventures.patadamrich.com">Summit Adventures</a> is a client focused ecommerce website designed and created as
+                part of my Certificate III in Information Technology. The site was constructed from scratch to achieve a number of predetermined
+                criteria. This project is hosted on Heroku please be patient whilst it loads.
+              </p>
+              <div class="project-li-links">
+                <a href="https://summitadventures.patadamrich.com">View Live <span class="material-icons">open_in_new</span></a>
+                <a href="https://github.com/Patadam">View Source <span class="material-icons">source</span></a>
+              </div>
+              <h4>Early 2021</h4>
+            </div>
+            <img loading="lazy" src="/static/images/summit.webp" alt="" class="project-li-img" />
+          </li>
+          <!------ Project [#3] ----------------------------------->
+          <li class="project-li">
+            <div class="project-li-content-wrapper">
+              <div class="project-li-title">
+                <h2>Portfolio</h2>
+                <h3>Website Creation</h3>
+              </div>
+              <p>
+                This <a href="https://patadamrich.com">Portfolio</a> was created to showcase my skills and abilities. Using a number of base
+                technologies I aimed to create a place where I can add skills, projects and experience over time to reflect on my journey.
+              </p>
+              <div class="project-li-links">
+                <a href="https://patadamrich.com">View Live <span class="material-icons">open_in_new</span></a>
+                <a href="https://github.com/Patadam/Portfolio">View Source <span class="material-icons">source</span></a>
+              </div>
+              <h4>November 2021</h4>
+            </div>
+            <img loading="lazy" src="/static/images/portfolio.webp" alt="" class="project-li-img" />
+          </li>
+        </ul>
+        <!------ End Projects List ----------------------------------->
+        <!------ Start Extra Projects List ----------------------------------->
+        <ul class="extra-projects-list">
+          <!------ Extra Project [#1] ----------------------------------->
+          <li class="extra-project-li">
+            <img loading="lazy" src="/static/images/cafe.webp" alt="" class="extra-project-li-img" />
+            <div class="li-titles">
+              <p class="extra-project-li-subtitle">Design</p>
+              <h4 class="extra-project-li-title">Coming Soon</h4>
+            </div>
+          </li>
+          <!------ Extra Project [#2] ----------------------------------->
+          <li class="extra-project-li">
+            <img loading="lazy" src="/static/images/restaurant.webp" alt="" class="extra-project-li-img" />
+            <div class="li-titles">
+              <p class="extra-project-li-subtitle">Static Website</p>
+              <h4 class="extra-project-li-title">Tasty Roads Resturant</h4>
+            </div>
+          </li>
+          <!------ Extra Project [#3] ----------------------------------->
+          <li class="extra-project-li">
+            <img loading="lazy" src="/static/images/gym.webp" alt="" class="extra-project-li-img" />
+            <div class="li-titles">
+              <p class="extra-project-li-subtitle">Website Redesign</p>
+              <h4 class="extra-project-li-title">Coming Soon</h4>
+            </div>
+          </li>
+        </ul>
+        <!------ End Extra Projects List ----------------------------------->
+      </section>
+
+      <!------ Start About Container  ----------------------------------->
+      <section class="container about" id="about">
+        <h1>About me</h1>
+        <p>Check out my pursuits below, see what I'm working on and what I've completed. See what technologies im interested in.</p>
+        <!------ Start Featured List  ----------------------------------->
+        <ul class="about-featured-list">
+          <li class="about-featured-li">
+            <img loading="lazy" src="/static/images/scouts.webp" alt="" />
+            <div class="content">
+              <p>In Progress</p>
+              <h2>Queen Scout</h2>
+              <p>Scouts Australia</p>
+              <p>I am currently working to complete my Queen Scout award. The highest achievement in the Venturer Scouts section.</p>
+            </div>
+          </li>
+          <li class="about-featured-li">
+            <img loading="lazy" src="/static/images/infotech.webp" alt="" />
+            <div class="content">
+              <p>In Progress</p>
+              <h2>Certficate III</h2>
+              <p>Information Technology</p>
+              <p>As part of my studies at school I am completing an extra-curicular Certificate III in Information Technology.</p>
+            </div>
+          </li>
+          <li class="about-featured-li">
+            <img loading="lazy" src="/static/images/business.webp" alt="" />
+            <div class="content">
+              <p>In Progress</p>
+              <h2>Certificate III</h2>
+              <p>Business</p>
+              <p>
+                As part of my Queen Scout award I aim to complete the necessary RPL processes to be awarded the recognised Certificate III in
+                Business.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <!------ End Featured List ----------------------------------->
+        <!------ Start Skills List ----------------------------------->
+        <ul class="about-skills-list">
+          <li class="about-skills-li">
+            <img loading="lazy" src="/static/images/icons/html.png" alt="" class="about-skills-li-img" />
+            <p class="about-skills-li-p">HTML</p>
+          </li>
+          <li class="about-skills-li">
+            <img loading="lazy" src="/static/images/icons/css.png" alt="" class="about-skills-li-img" />
+            <p class="about-skills-li-p">CSS</p>
+          </li>
+          <li class="about-skills-li">
+            <img loading="lazy" src="/static/images/icons/scss.webp" alt="" class="about-skills-li-img" />
+            <p class="about-skills-li-p">SCSS</p>
+          </li>
+          <li class="about-skills-li">
+            <img loading="lazy" src="/static/images/icons/javascript.png" alt="" class="about-skills-li-img" />
+            <p class="about-skills-li-p">Javascript</p>
+          </li>
+          <li class="about-skills-li">
+            <img loading="lazy" src="/static/images/icons/python.png" alt="" class="about-skills-li-img" />
+            <p class="about-skills-li-p">Python</p>
+          </li>
+          <li class="about-skills-li">
+            <img loading="lazy" src="/static/images/icons/flask.webp" alt="" class="about-skills-li-img" />
+            <p class="about-skills-li-p">Flask</p>
+          </li>
+        </ul>
+        <!------ End Skills List ----------------------------------->
+      </section>
+      <!------ End About Container  ----------------------------------->
+      <!------ End Main Content  ----------------------------------->
+    </main>
+
+    <footer>
+      <!------ Start Footer Content  ----------------------------------->
+      <section class="container footer" id="contact">
+        <div class="footer-content-wrapper">
+          <h2>Let's Connect</h2>
+          <p>
+            I'm always looking for new ways to learn, connect and get involved. <br />
+            If you want to chat please reach out and let's connect.
+          </p>
+          <br />
+          <p><a href="mailto:patrick@patadamrich.com">patrick@patadamrich.com</a></p>
+          <br />
+          <div class="footer-end-content">
+            <p>Patrick &copy; 2021.</p>
+          </div>
+        </div>
+        <div class="footer-contact-wrapper">
+          <form class="footer-contact-form" method="POST" name="contact-form" data-netlify="true">
+            <div class="input-group">
+              <label for="name">Name</label>
+              <input class="footer-input" type="text" name="name" id="name" maxlength="64" />
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input class="footer-input" type="email" name="email" id="email" required />
+            </div>
+            <div class="input-group">
+              <label for="message">Message</label>
+              <textarea class="footer-input" name="message" id="message" cols="30" rows="10" required> </textarea>
+            </div>
+            <input class="footer-submit" type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+      <!------ End Footer Content  ----------------------------------->
+    </footer>
+
+    <!------ End Body Content  ----------------------------------->
+    <!------ Import Javascript  ----------------------------------->
+    <script defer src="/static/javascript/main.js"></script>
+    <!------ Import Stylesheets  ----------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!--- Google Material Icons stylesheet -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <!-- Popup card expansion for extra-projects -->
+    <div class="card-wrapper hidden">
+      <div class="card-close"></div>
+      <div class="card-container">
+        <div class="card-content">
+          <p class="description">...</p>
+          <h2 class="title">...</h2>
+          <p class="sub-title">...</p>
+          <br />
+          <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, exercitationem?</p>
+          <br />
+          <br />
+          <div class="flex-horizontal">
+            <a class="button primary live" href="">View Live</a> <a class="button secondary source" href="">Github</a>
+          </div>
+          <div class="navigation-slider flex-horizontal">
+            <a class="back"><i class="material-icons">arrow_back</i> </a>
+            <ul class="dots">
+              <li class="dot bg-blue"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+            </ul>
+            <a class="forward"><i class="material-icons">arrow_forward</i> </a>
+          </div>
+        </div>
+        <img class="image" loading="lazy" src="" alt="" />
+        <ul class="card-nav">
+          <li class="blue">01</li>
+          <li>02</li>
+          <li>03</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
