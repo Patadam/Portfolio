@@ -493,10 +493,10 @@ main {
       left: 0;
       top: 0;
       z-index: 1;
-      filter: brightness(0.3);
+      filter: brightness(0.4);
     }
     &:hover img {
-      filter: brightness(0.5);
+      filter: brightness(0.25);
     }
   }
 
@@ -736,9 +736,10 @@ input[type="submit"] {
     border-radius: 4px;
 
     .card-content {
-      padding: 4rem;
+      //padding: 4rem;
+      padding: 8%;
       .description {
-        margin-bottom: 3em;
+        margin-bottom: 5%;
         font-weight: 600;
         font-size: 28px;
       }
@@ -754,7 +755,7 @@ input[type="submit"] {
 
       .navigation-slider {
         position: absolute;
-        bottom: 4rem;
+        bottom: 8%;
         a {
           position: relative;
           width: 24px;

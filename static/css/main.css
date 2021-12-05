@@ -545,13 +545,13 @@ main {
   left: 0;
   top: 0;
   z-index: 1;
-  -webkit-filter: brightness(0.3);
-          filter: brightness(0.3);
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
 }
 
 .about .about-featured-li:hover img {
-  -webkit-filter: brightness(0.5);
-          filter: brightness(0.5);
+  -webkit-filter: brightness(0.25);
+          filter: brightness(0.25);
 }
 
 .about .about-skills-list {
@@ -849,11 +849,11 @@ input[type="submit"] {
 }
 
 .card-wrapper .card-container .card-content {
-  padding: 4rem;
+  padding: 8%;
 }
 
 .card-wrapper .card-container .card-content .description {
-  margin-bottom: 3em;
+  margin-bottom: 5%;
   font-weight: 600;
   font-size: 28px;
 }
@@ -871,7 +871,7 @@ input[type="submit"] {
 
 .card-wrapper .card-container .card-content .navigation-slider {
   position: absolute;
-  bottom: 4rem;
+  bottom: 8%;
 }
 
 .card-wrapper .card-container .card-content .navigation-slider a {
