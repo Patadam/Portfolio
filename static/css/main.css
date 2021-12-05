@@ -179,6 +179,9 @@ a:hover {
   display: -ms-grid;
   display: grid;
   place-content: center start;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  gap: 2em;
 }
 
 .hero .hero-title-h1 {
@@ -318,9 +321,8 @@ a:hover {
 }
 
 .hero-cta-wrapper {
-  position: absolute;
-  bottom: 4rem;
-  left: 0;
+  position: relative;
+  place-self: end start;
   cursor: pointer;
   -webkit-transition: -webkit-transform 0.05s linear;
   transition: -webkit-transform 0.05s linear;
@@ -392,6 +394,9 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   width: 1000%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .projects .projects-list .project-li .project-li-content-wrapper {
@@ -553,8 +558,9 @@ main {
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(64px, 156px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(64px, 156px));
+  -ms-grid-columns: (minmax(64px, max-content))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(64px, -webkit-max-content));
+      grid-template-columns: repeat(auto-fit, minmax(64px, max-content));
   gap: 2rem;
 }
 
@@ -571,6 +577,13 @@ main {
 
 .about .about-skills-list .about-skills-li .about-skills-li-p {
   margin-top: 0.6em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about .about-skills-list .about-skills-li img {
+  width: minmax(64px, 10vw);
 }
 
 @media screen and (max-width: 600px) {

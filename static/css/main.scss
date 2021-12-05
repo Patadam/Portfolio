@@ -187,6 +187,8 @@ a {
   height: 100%;
   display: grid;
   place-content: center start;
+  grid-auto-rows: max-content;
+  gap: 2em;
   // --- Hero Title ------------ //
   .hero-title-h1 {
     font-size: 76px;
@@ -304,9 +306,11 @@ a {
 
 // --- Hero CTA ------------ //
 .hero-cta-wrapper {
-  position: absolute;
-  bottom: 4rem;
-  left: 0;
+  //position: absolute;
+  //bottom: 4vh;
+  //left: 0;
+  position: relative;
+  place-self: end start;
   cursor: pointer;
   transition: transform 0.05s linear;
   a {
@@ -364,12 +368,12 @@ main {
       max-height: 400px;
       object-fit: cover;
       width: 1000%;
+      align-self: center;
     }
     .project-li-content-wrapper {
       display: grid;
       place-content: space-around start;
       background: var(--bg-shaded-300);
-
       h2 {
         text-transform: uppercase;
       }
@@ -499,7 +503,7 @@ main {
   .about-skills-list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(64px, 156px));
+    grid-template-columns: repeat(auto-fit, minmax(64px, max-content));
     gap: 2rem;
     .about-skills-li {
       display: flex;
@@ -507,6 +511,11 @@ main {
       text-align: center;
       .about-skills-li-p {
         margin-top: 0.6em;
+
+        align-self: center;
+      }
+      img {
+        width: minmax(64px, 10vw);
       }
     }
   }
