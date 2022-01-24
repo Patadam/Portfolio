@@ -33,11 +33,11 @@ html {
   --bg-shaded-300: hsl(0, 0%, 95%);
   --bg-white: hsl(0, 0%, 100%);
 
-  --primary-clr-light: hsl(210, 90%, 50%);
-  --primary-clr: hsl(210, 90%, 30%);
-  --primary-clr-dark: hsl(210, 90%, 23%);
+  --primary-clr-light: #5377ED;
+  --primary-clr: #4A6AD4;
+  --primary-clr-dark: #415DBA;
 
-  --error: hsl(0, 70%, 50%);
+  --error: hsl(0, 80%, 50%);
 }
 
 html[data-theme="dark"] {
@@ -55,8 +55,9 @@ html[data-theme="dark"] {
   --bg-shaded-300: hsl(0, 0%, 10%);
   --bg-white: hsl(0, 0%, 5%);
 
-  --primary-clr: hsl(210, 90%, 50%);
-  --primary-clr-dark: hsl(210, 90%, 43%);
+  --primary-clr-light: #5377ED;
+  --primary-clr: #4A6AD4;
+  --primary-clr-dark: #415DBA;
 
   .about-skills-li:last-child img {
     filter: invert(1);
