@@ -24,12 +24,12 @@ html {
   --ff-clr-300: hsl(0, 0%, 80%);
   --ff-clr-200: hsl(0, 0%, 90%);
   --ff-clr-100: hsl(0, 0%, 100%);
-  --bg-shaded-300: hsl(0, 0%, 95%);
+  --bg-shaded-300: hsl(0, 0%, 92%);
   --bg-white: hsl(0, 0%, 100%);
-  --primary-clr-light: #5377ED;
-  --primary-clr: #4A6AD4;
-  --primary-clr-dark: #415DBA;
-  --error: hsl(0, 80%, 50%);
+  --primary-clr-light: #5377ed;
+  --primary-clr: #4a6ad4;
+  --primary-clr-dark: #415dba;
+  --error: hsl(0, 60%, 60%);
 }
 
 html[data-theme="dark"] {
@@ -41,11 +41,11 @@ html[data-theme="dark"] {
   --ff-clr-700: hsl(0, 0%, 80%);
   --ff-clr-800: hsl(0, 0%, 90%);
   --ff-clr-900: hsl(0, 0%, 100%);
-  --bg-shaded-300: hsl(0, 0%, 10%);
+  --bg-shaded-300: hsl(0, 0%, 12%);
   --bg-white: hsl(0, 0%, 5%);
-  --primary-clr-light: #5377ED;
-  --primary-clr: #4A6AD4;
-  --primary-clr-dark: #415DBA;
+  --primary-clr-light: #5377ed;
+  --primary-clr: #4a6ad4;
+  --primary-clr-dark: #415dba;
 }
 
 html[data-theme="dark"] .about-skills-li:last-child img {
@@ -254,12 +254,38 @@ a:hover {
 }
 
 .hero-nav-wrapper .hero-nav-list .hero-nav-li:hover {
-  border-right: 5px solid var(--static-clr-200);
+  border-right: 6px solid var(--static-clr-200);
 }
 
 .hero-nav-wrapper .hero-nav-list .hero-nav-li:hover a {
   color: var(--static-clr-100);
   font-weight: 500;
+}
+
+.social-centre {
+  display: -ms-grid;
+  display: grid;
+  place-content: start;
+  padding-left: 10rem;
+  place-items: center;
+  -ms-grid-columns: (max-content)[2];
+      grid-template-columns: repeat(2, -webkit-max-content);
+      grid-template-columns: repeat(2, max-content);
+  gap: 1em;
+}
+
+.social-centre a {
+  width: 32px;
+}
+
+.social-centre a,
+.social-centre a.material-icons {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  color: var(--ff-clr-800);
+  font-size: 32px;
 }
 
 @media screen and (max-width: 600px) {
@@ -595,6 +621,10 @@ main {
   }
 }
 
+footer {
+  background: var(--primary-clr-dark);
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
@@ -616,6 +646,19 @@ main {
   position: relative;
 }
 
+.footer .footer-content-wrapper h2 {
+  color: var(--static-clr-100);
+}
+
+.footer .footer-content-wrapper p {
+  color: var(--static-clr-200);
+}
+
+.footer .footer-content-wrapper a {
+  color: var(--static-clr-200);
+  font-weight: 500;
+}
+
 .footer .footer-content-wrapper .footer-end-content {
   position: absolute;
   bottom: 0;
@@ -632,20 +675,20 @@ main {
 .footer .footer-contact-wrapper form .input-group label {
   padding: 0 0 0.4em 0em;
   display: block;
-  color: var(--ff-clr-700);
+  color: var(--static-clr-200);
 }
 
 .footer .footer-contact-wrapper form .footer-input {
   width: 100%;
-  border: 1px solid var(--ff-clr-300);
-  background: var(--bg-shaded-300);
+  border: 1px solid var(--primary-clr);
+  background: var(--primary-clr-light);
   padding: 0.7em;
-  color: var(--ff-clr-700);
+  color: var(--static-clr-200);
 }
 
 .footer .footer-contact-wrapper form .footer-input:focus {
   outline: none;
-  border: 1px solid var(--ff-clr-800);
+  border: 1px solid var(--static-clr-300);
 }
 
 .footer .footer-contact-wrapper form .footer-input:focus:invalid {
@@ -663,7 +706,7 @@ main {
 }
 
 .footer .footer-contact-wrapper form .footer-submit:hover, .footer .footer-contact-wrapper form .footer-submit:focus {
-  background: var(--primary-clr-dark);
+  background: var(--primary-clr-light);
 }
 
 input[type="submit"] {
