@@ -134,8 +134,8 @@ p {
 
 header {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("/static/images/background.webp");
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/static/images/background.webp");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.6))), url("/static/images/background.webp");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("/static/images/background.webp");
   background-size: cover;
   padding: 5rem 0;
   max-height: 100vh;
@@ -260,32 +260,6 @@ a:hover {
 .hero-nav-wrapper .hero-nav-list .hero-nav-li:hover a {
   color: var(--static-clr-100);
   font-weight: 500;
-}
-
-.social-centre {
-  display: -ms-grid;
-  display: grid;
-  place-content: start;
-  padding-left: 10rem;
-  place-items: center;
-  -ms-grid-columns: (max-content)[2];
-      grid-template-columns: repeat(2, -webkit-max-content);
-      grid-template-columns: repeat(2, max-content);
-  gap: 1em;
-}
-
-.social-centre a {
-  width: 32px;
-}
-
-.social-centre a,
-.social-centre a.material-icons {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  color: var(--ff-clr-800);
-  font-size: 32px;
 }
 
 @media screen and (max-width: 600px) {
@@ -424,6 +398,7 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  border-radius: 8px;
 }
 
 .projects .projects-list .project-li .project-li-content-wrapper {
@@ -483,6 +458,7 @@ main {
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   padding-bottom: 4rem;
   border-bottom: 1px solid var(--ff-clr-300);
+  gap: 2rem;
 }
 
 .extra-projects-list .extra-project-li {
@@ -512,6 +488,9 @@ main {
   z-index: 1;
   -webkit-filter: brightness(0.5);
           filter: brightness(0.5);
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .extra-projects-list .extra-project-li:hover .extra-project-li-img {
@@ -536,7 +515,7 @@ main {
 
 .about .about-featured-li {
   width: 100%;
-  min-height: 400px;
+  min-height: 360px;
   position: relative;
 }
 
@@ -572,13 +551,11 @@ main {
   left: 0;
   top: 0;
   z-index: 1;
-  -webkit-filter: brightness(0.4);
-          filter: brightness(0.4);
-}
-
-.about .about-featured-li:hover img {
-  -webkit-filter: brightness(0.25);
-          filter: brightness(0.25);
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .about .about-skills-list {
