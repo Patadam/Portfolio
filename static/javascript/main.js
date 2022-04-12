@@ -58,7 +58,7 @@ toggle.addEventListener("click", () => {
 
 (function defaultSetup() {
   // collects the cookie from cache and changes the default light theme to dark if theme is dark.
-  document.cookie.split(";").includes("data-theme=dark") ? toggleTheme() : "light";
+  document.cookie.split(";").includes("data-theme=dark") ? toggleTheme() : "dark";
 })();
 
 const mobileNav = document.querySelector(".mobile-nav-wrapper");
