@@ -83,11 +83,11 @@ links.forEach((link) => {
 
 const db = [
   {
-    title: "Coming Soon",
-    subtitle: "Resturant Website Design",
-    type: "Adobe XD Design",
-    description: "...",
-    link_live: "https://patadamrich.com",
+    title: "Algorithms Visualiser",
+    subtitle: "Personal Project and Learning Exercise",
+    type: "Next.js Website",
+    description: "This project is currently in the works. There is nothing to show here yet.",
+    link_live: "https://algorithms.patadamrich.com",
     link_source: "https://github.com",
     img: "/static/images/cafe.webp",
   },
@@ -102,11 +102,11 @@ const db = [
     img: "/static/images/restaurant.webp",
   },
   {
-    title: "Coming Soon",
-    subtitle: "Gym & Fitness Club",
-    type: "Website with CMS",
-    description: "...",
-    link_live: "https://reps.patadamrich.com",
+    title: "Personal Blog",
+    subtitle: "My Personal Next.js Blog",
+    type: "Next.js Website",
+    description: "This project is currently in the works. There is nothing to show here yet.",
+    link_live: "https://blog.patadamrich.com",
     link_source: "https://github.com",
     img: "/static/images/gym.webp",
   },
