@@ -53,12 +53,12 @@ function toggleTheme() {
 
 toggle.addEventListener("click", () => {
   let theme = toggleTheme();
-  document.cookie = `data-theme=${theme}; path=/`; // sets the cookie when the theme is changed.
+  //document.cookie = `data-theme=${theme}; path=/`; // sets the cookie when the theme is changed.
 });
 
 (function defaultSetup() {
   // collects the cookie from cache and changes the default light theme to dark if theme is dark.
-  document.cookie.split(";").includes("data-theme=dark") ? toggleTheme() : "dark";
+  //document.cookie.split(";").includes("data-theme=dark") ? toggleTheme() : "dark";
 })();
 
 const mobileNav = document.querySelector(".mobile-nav-wrapper");
