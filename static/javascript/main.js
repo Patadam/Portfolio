@@ -51,10 +51,10 @@ function toggleTheme() {
   return newstate; // returns the new theme of the page to the calling instnace.
 }
 
-toggle.addEventListener("click", () => {
-  let theme = toggleTheme();
-  //document.cookie = `data-theme=${theme}; path=/`; // sets the cookie when the theme is changed.
-});
+//toggle.addEventListener("click", () => {
+//let theme = toggleTheme();
+//document.cookie = `data-theme=${theme}; path=/`; // sets the cookie when the theme is changed.
+//});
 
 (function defaultSetup() {
   // collects the cookie from cache and changes the default light theme to dark if theme is dark.
