@@ -367,7 +367,7 @@ main {
 
 .projects .projects-list {
   list-style: none;
-  margin: 4rem 0;
+  margin: 4rem 0 0 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
