@@ -1,0 +1,105 @@
+// Language: scss
+// Updated: June 2022
+// Version: 1.0.0
+
+// Reset Default Styles
+*,
+html,
+body,
+:root,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #202020;
+  font-family: "Rubik", sans-serif, roboto, arial;
+}
+
+// SCSS functions
+@mixin random-bg {
+  background: rgb(random(255), random(255), random(255));
+}
+
+// Global Styles
+body {
+  //padding: 2rem 4rem;
+  min-height: 100vh;
+}
+
+// Start Core Styles
+
+header {
+  //background: lightblue;
+  padding: 4% 7%;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #fafafa;
+  nav {
+    place-self: end;
+    margin-bottom: 4%;
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    a {
+      text-decoration: none;
+    }
+  }
+  .hero {
+    //background: lightcoral;
+    min-height: 70vh;
+    display: grid;
+    grid-template: 1fr 1fr;
+    grid-template-areas:
+      "content image"
+      "content image";
+    grid-column-gap: 5%;
+
+    .image {
+      //background: blue;
+      grid-area: image;
+      max-height: 70vh;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ddd;
+        box-shadow: 3px -6px 6px rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+
+main {
+  background: lightcyan;
+}
+
+section {
+  //@include random-bg;
+}
+
+// Specific Styles
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #202020;
+  span:first-of-type {
+    font-weight: 400;
+    height: 2.6rem;
+  }
+}
+
+.container {
+  padding: 2rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
